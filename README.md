@@ -5,7 +5,7 @@ It offers a diverse range of in-depth learning materials, expert insights, and p
 Explore advanced topics, or stay updated with the latest trends with *The PHP Professional*
 
 ## Author
-<a href="https://navjotsinghprince.com"><img src="https://navjotsinghprince.com/img/signature-black.png" alt="Navjot Singh" height="50"></a>
+<a href="https://navjotsinghprince.com" traget="_blank"><img src="https://navjotsinghprince.com/img/signature-black.png" alt="Navjot Singh" height="50"></a>
 
 ## Contact
 If you discover any question within The PHP Professional, please send an e-mail to Navjot via [contact@navjotsinghprince.com](mailto:contact@navjotsinghprince.com). Your all questions will be answered.
