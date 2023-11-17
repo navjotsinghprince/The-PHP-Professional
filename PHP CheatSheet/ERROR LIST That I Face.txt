@@ -43,7 +43,7 @@ don't be confused server and session variables
 $sql= "INSERT INTO post (title,description,category,post_date,author,post_img)
 VALUES('{$title}','{$description}',{$category},'{$date}',{$author},'{$file_name}');";==like this
 
-jab multiple query chalaye toh end me ;";  ye 2  bar semicolon lagaye
+if multiple query execute then put ;"; at end.
 
 ==========================================
 Always remember sql queries overrides 

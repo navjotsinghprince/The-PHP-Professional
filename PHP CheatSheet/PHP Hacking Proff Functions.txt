@@ -1,0 +1,31 @@
+htmlentities($str1,ENT_QUOTES) ==== special characters converts to html_entities code
+html_entity_decode($str) ==== Decode codes 
+
+htmlspecialchars($str1) ====  html special characters converts to html_entities code
+htmlspecialchars($str1,ENT_QUOTES)====
+
+get_html_translation_table(HTML_ENTITIES) ==== Checking encode list testing purposes
+get_html_translation_table(HTML_SPECIALCHARS) ==== Checking encode list testing purposes
+
+----------------------------------------------------------------------------------------------
+md5($password,false)====convert hex format password..message digest algorithm===Encrypted password saved 
+md5($password,true)====convert binary format password
+
+sha1($password1,false)==== convert hex format password ===sha1 US secure hash algorithm
+sha1($password1,true)==== convert binary format password
+
+convert_uuencode($str)====Encodes a String using uuencode algorithm (Encrypted) 
+convert_uudecode($newstr)====Decodes a Encoded string
+
+bin2hex("Navjot")====convert ASCII characters to hexadecimal values
+hex2bin($newstr)====decode hexadecimal values to  characters  
+
+
+strip_tags($str)====To strips(remove) a string from HTML, and PHP tags.
+strip_tags($str,"<b>") ======= contains only b tag from string
+
+wordwrap($msg,4,"<br>",false)==== Wraps a string into new line when it reaches a specific length
+wordwrap($msg,4,"<br>",true)
+
+Warm Regards
+Navjot Singh
