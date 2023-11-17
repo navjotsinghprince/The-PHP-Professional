@@ -1,0 +1,36 @@
+class===frame of variables and functions
+object===Use access key of class members
+
+construtor===automatically called when obj created
+destrcutor===automatically called when obj exited script end 
+
+public===access properties and methods  outside class and inside class and derived class and outside class with obj
+private ===access properties and methods only inside classs and cannot access derived class and outside class with obj
+protected===access properties and methods only inside class and also access derived class and not outside direct class with obj
+
+Inheritance===When a class derives from another class (copy parent class code to child class)
+Inheritance===constructor overriding is possible(call parent class constructor from child class)
+Inheritance===function overrding is possible as well as parameter overrriding is possible 
+Inheritance===Property overrding is possible 
+
+final===The final keyword can be used to Prevent Class Inheritance or To Prevent Method Overriding.only use class and methods
+const MYLEAVING_MSG===value cannot be changed once it was declared ,Use UPPSERCASE  letter to declare  
+
+abstract===Methods and variables that are declared, but not implemented in the code. child class fill out tasks must required;
+abstract===abstracts classes methods and variables values overriding is possible
+
+interface==same as abstract but cannot declare variables only methods are allowed
+
+static methods===access without create object
+static properties ===access without create object
+
+trait===Traits provide a way to group functionality in a fine-grained and consistent way to mutiple classes inheritance behaviour.
+trait===override inherited class use trait (we can also override trait in class)
+
+namespaces===namespacesamespaces provide a way to encapsulate items such as classes, functions, and constants, 
+preventing naming conflicts between different parts of your code or third-party libraries
+
+PHP Template literal Syntax===echo "your first name is :-{$this->firstname}<br>";
+
+Warm Regards
+Navjot Singh

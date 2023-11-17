@@ -1,0 +1,77 @@
+BUG-HUNTERS RULES  
+
+Remember always use echo in td tag for show data  and anchor tag to send id 
+
+Remember always check syntax eroor 
+
+Remember always check sql query Must  
+
+Remember always Logic error
+
+Remember use outside double quotes and inside single quotes 
+
+Remember always close if condition and while loop curlybraces
+
+$sql="SELECT * FROM user WHERE user_id= {$user_id}";   
+Remember integer value dont use single quotes
+
+==================================================
+$user_id=$_GET["id"];   //get value from url bar
+                
+
+=================================================
+Remember This Format
+echo '<li><a href="users.php?page=' .$i .' ">'.$i.'</a></li>';
+
+echo'<li><a href="users.php?page='.($page + 1).' ">Next</a></li>'
+
+===============EDIT AND UPDATE ID  SEND CODE===================
+ <td class='edit'><a href='update-category.php?id=<?php echo $row["category_id"];?>'  ><i class='fa fa-edit'></i></a></td>
+      
+<td class='delete'><a href='delete-category.php?id=<?php echo $row["category_id"];?>'><i class='fa fa-trash-o'></i></a></td>
+
+==================================
+echo "<script> location.href = 'welcome.php'</script>";
+echo "<script> location.href = 'http://localhost/news-site/admin/post.php'</script>";
+
+header("Location: {$hostname}/admin/post.php");
+
+================================
+don't be confused server and session variables
+
+===================================
+$sql= "INSERT INTO post (title,description,category,post_date,author,post_img)
+VALUES('{$title}','{$description}',{$category},'{$date}',{$author},'{$file_name}');";==like this
+
+jab multiple query chalaye toh end me ;";  ye 2  bar semicolon lagaye
+
+==========================================
+Always remember sql queries overrides 
+use $sql and $sql1 
+
+===========================================
+Always check UPDATE QUERY BEFORE FIRE 
+echo $sql="UPDATE post SET title='{$_POST['post_title']}',description='{$_POST['postdesc']}',category={$_POST['category']},post_img ='{$file_name}' WHERE post_id = {$_POST['post_id']}";
+
+============================================
+Remember Send Multiple Values format to url bar  
+<td class='delete'><a href='delete-post.php?id=<?php echo $row["post_id"];?>&catid=<?php echo $row["category"];?>'><i class='fa fa-trash-o'></i></a></td>
+
+============================================
+use & for more values send to url bar like
+echo'<li><a href="index.php?cid='.$cat_id.'&page='.($page - 1). '">Prev</a></li>';
+
+================================================
+Big error
+Always remember close single quotes and double quotes ...compulsory it can break your code
+
+==============================================
+
+Notice: Array to string conversion in E:\server\htdocs\php-filesystem\1file-system-functions.php on line 44
+To resolve use print_r() function
+========================================== 
+check function paramters commas (,) or (.) seperator 
+
+
+Warm Regards
+Navjot Singh 

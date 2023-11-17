@@ -1,0 +1,95 @@
+=================[SERVER CONNECTON WITH MYSQLI FUNCTION]==================  
+$conn = mysqli_connect("localhost","root","","crud") or  die("Connection failed: " . mysqli_connect_error());
+
+
+
+=========================[SQL QUERY]=============================
+$sql = "SELECT * FROM student JOIN studentclass WHERE student.sclass = studentclass.cid"; ==SHOW RECORDS
+
+$sql = "INSERT INTO student(sname,saddress,sclass,sphone) VALUES ('{$stu_name}','{$stu_address}','{$stu_class}','{$stu_phone}')";  
+
+$sql = "DELETE FROM student WHERE sid = {$stu_id}";
+
+$sql = "UPDATE student SET sname = '{$stu_name}', saddress = '{$stu_address}',sclass = '{$stu_class}', sphone = '{$stu_phone}' WHERE sid = {$stu_id}";
+
+
+
+============================[MYSQLI FIRE FUNCTIONS]===============================
+$result=mysqli_query($conn,$sql) or die(""Query Failed); =======Fire Query
+$rows= mysqli_num_rows($result); ======Return Total Number of Rows in phpMyAdmin table
+for ($i=0; $i<$rows; $i++) { 
+$single_row=mysqli_fetch_array($result); ==== Fetch Single Row  as indexed array and associative array both
+}
+
+
+
+==========================[MYSQLI FETCH FUNCTIONS]==================================
+$row=mysqli_fetch_assoc($result)====Return Row As Associative Array
+while($row=mysqli_fetch_assoc($result)){
+echo $row["name"];}
+
+$row=mysqli_fetch_row($result)====Return Row As Indexed Array
+while($row=mysqli_fetch_assoc($result)){
+echo $row[1];} ==== Use print_r() for testing
+
+$single_row=mysqli_fetch_array($result); ==== Fetch Single Row as indexed array and associative array both
+mysqli_fetch_array($result,MYSQLI_ASSOC)===Return row as Associative Array
+mysqli_fetch_array($result,MYSQLI_NUM)===Return row as Indexed Array
+
+mysqli_fetch_all($result)===Return all Records in One time as Multidimensional Array
+$row=mysqli_fetch_all($result,MYSQLI_ASSOC)===Return all Records in One time as Multidimensional Associative Array
+foreach($row as $data){
+echo $data["id"]." ".$["firstname"];
+
+$row=mysqli_fetch_field($result)====Fetch table column name information
+while($field=mysqli_fetch_field($result)){
+print_r($field);
+echo field->name;
+echo field->max_length;
+}
+
+
+
+========================[MYSQLI AFFECTED ROW FUNCTION]=========================
+mysqli_affected_rows($conn);=====Return how many Records are Affected
+
+
+
+========================[MYSQLI ERROR FUNCTIONS]=========================
+mysqli_connect_error()=====View Connection Related error
+$conn = mysqli_connect("localhost","root","","crud") or  die("Connection failed: " . mysqli_connect_error());
+
+mysqli_connect_errorno()=====Return View Connection Related error number
+$conn = mysqli_connect("localhost","root","","crud") or  die("Connection failed: " . mysqli_connect_errorno());
+
+
+mysqli_error()=====View  SQL Command  Related error
+$result=mysqli_query($conn,$sql) or die("Query Failed".mysqli_error($conn)); 
+
+mysqli_error_list()=====View  SQL Command  Related error
+print_r(mysqli_errorlist($conn));  ===Return Array with Error Numbers
+
+
+
+========================[MYSQLI die() and exit() FUNCTIONS]=========================
+die("script teminated")=====Terminate the current script and prints a message
+exit()=====same work 
+
+
+
+=====================================================================
+The include and require statement takes all the text/code/markup that exists in the specified file and copies it into the uses the include statement.........
+USE require when the file is required by the application....(designing part front-end)
+USE include when the file is not required and application should continue when file is not found....(backend-part)
+
+<?php include 'footer.php'; ?>===Will only produce a warning and the script will continue
+
+<?php require 'footer.php'; ?>===Will produce a fatel error and stop the script 
+
+<?php include_once 'footer.php'; ?>===if the code from a file has already been included,it will not be included again.and include_once return TRUE
+
+<?php require_once 'footer.php'; ?>=== Will produce a fatel error and stop the script 
+
+
+Warm Regards
+Navjot Singh 
