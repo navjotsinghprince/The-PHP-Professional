@@ -1,0 +1,29 @@
+is_int(230)===Check Value Integar or not
+
+is_float(230)===Check value float or not
+
+is_numeric(230)===Check value numaric or not
+
+is_string(230)===Check value string or not
+
+is_bool(1)===Check Value Boolean Or Not
+
+is_null(1)===Check value null or not
+
+is_array($var)===Check Variable value array or not
+
+is_scalar(230)===Check variable not in object,array, return false
+
+is_callable("myfunc")===Check Variable Callable Or Not - here myfunc() is also a function
+
+is_countable($v)===Check Values Countables Or Nots
+
+====================CodeUsage In Code=======================
+if(is_int(0)){
+  echo "this is an integar";
+}else{
+   echo "this is not an integar";
+}
+
+Warm Regards
+Navjot Singh
