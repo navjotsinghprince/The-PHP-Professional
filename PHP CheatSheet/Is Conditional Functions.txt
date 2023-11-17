@@ -18,7 +18,8 @@ is_callable("myfunc")===Check Variable Callable Or Not - here myfunc() is also a
 
 is_countable($v)===Check Values Countables Or Nots
 
-====================CodeUsage In Code=======================
+
+====================Example Usage In Code=======================
 if(is_int(0)){
   echo "this is an integar";
 }else{
