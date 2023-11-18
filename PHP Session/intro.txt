@@ -1,0 +1,42 @@
+A session is a way to store information (in variables) to be used across multiple pages.
+Unlike a cookie, the information is not stored on the users computer.
+
+What is a PHP Session?
+When you work with an application, you open it, do some changes, and then you close it. This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. But on the internet there is one problem: the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.
+
+Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). By default, session variables last until the user closes the browser.
+So; Session variables hold information about one single user, and are available to all pages in one application.
+
+
+Start a PHP Session
+Note: The session_start() function must be the very first thing in your document. Before any HTML tags.
+A session is started with the session_start() function.
+Session variables are set with the PHP global variable: $_SESSION.
+
+
+Get PHP Session Variable Values
+Next, we create another page called "demo_session2.php". From this page, we will access the session information we set on the first page ("demo_session1.php").
+Notice that session variables are not passed individually to each new page, instead they are retrieved from the session we open at the beginning of each page (session_start()).
+
+
+How does it work? How does it know it's me?
+Most sessions set a user-key on the user's computer that looks something like this: 765487cf34ert8dede5a562e4f3a7e12. Then, when a session is opened on another page, it scans the computer for a user-key. If there is a match, it accesses that session, if not, it starts a new session.
+
+
+===============================IN OTHER SIMPLE WORDS==========================================================
+This is called session storage, where temporary information from the user's request is stored on the server.
+Like when we create a session on the login page by taking the username and password.
+
+step 1 = session_start(); = This function must be written on every page where the session variable is being used.
+step 2 = echo $_SESSION['name']; = To retrieve the value of a session variable.
+step 3 = We use the "delete session" function when the user logout
+
+session_unset();       First, it will unset these variables.
+session_destroy();     It will delete/destroy the session.
+
+IMPORTANT NOTE:
+When the session_start() function is executed, the server will create a folder where the data for session variables will be stored. 
+It will also create a cookie named sessid on the user's computer. The content of this cookie will match the session ID with the server.
+
+Warm Regards
+Navjot Singh
