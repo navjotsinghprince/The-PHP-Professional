@@ -1,0 +1,45 @@
+What is a Cookie?
+A cookie is often used to identify a user. 
+A cookie is a small file that the server embeds on the user's computer. 
+Each time the same computer requests a page with a browser, it will send the cookie too. With PHP, you can both create and retrieve cookie values.
+
+
+1= As soon as a visitor accesses a website, cookies are used to store information on their system for various purposes.
+2= Temporary information is stored on the visitor's computer.
+3= It can retrieve information about the visitor's browser.
+4= It can retrieve the visitor's screen size.
+5= suppose, It can gather information about the products (ranging from 50 to 100) in which the user is interested.
+
+syntax in php
+setcookie(name,value,expire,path,domain,secure,httonly);
+Explanation of parameters:-
+name = name of the cookie
+
+value = value of the cookie
+
+expire = When setting a cookie on the user's system, you determine when it should expire or be destroyed.
+example = 
+1min = 60seconds
+1hour = 60min * 60seconds = 3600 sec in 1 hour
+1day = 24hours * 3600seconds = 86400 secconds in 24 hours
+30day = 30day * 86400seconds = 25,92,000 seconds in 1 month
+SET COOKIE USE THIS METHOD = time()+(86400*30)
+- subtract for delete the cookie
+
+path = You specify the path from which to retrieve the cookie.
+1= agr "/" If you provide the slash, then the cookie can be obtained from any page
+2= If you provide the path as /aboutus, then the cookie will be retrieved only from the 'about us' page
+
+domain = mysite.com or sub domain test.mysite.com
+
+secure = true/false
+1= true cookie will only be set if a secure protocol is used
+2= false = Cookies can be set even with an insecure protocol
+
+httonly = true /false
+1= True, the cookie will only be accessed from the server side.
+2= false Cookie can also be accessed through JavaScript.
+
+
+Warm Regards
+Navjot Singh

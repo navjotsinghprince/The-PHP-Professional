@@ -1,0 +1,4 @@
+$_FILES is a super global variable which can be used to upload files.
+
+When we upload a file from the client machine,
+It holds the file and creates a folder on the server to save the file.
