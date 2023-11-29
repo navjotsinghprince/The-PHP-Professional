@@ -9,7 +9,7 @@ if (isset($_FILES['image'])) {
 	$file_tmpname = $_FILES['image']['tmp_name'];
 	$filesize = $_FILES['image']['size'];
 
-	move_uploaded_file($file_tmpname, "Image-Containter-Folder/" . $filename);
+	move_uploaded_file($file_tmpname, "imageFolder/" . $filename);
 	echo "file was successfully uploaded";
 } else {
 	echo "file could not be uploaded";
