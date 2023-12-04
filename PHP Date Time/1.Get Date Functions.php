@@ -1,4 +1,28 @@
 <?php
+/*
+OverView
+d=(01 to 31)
+j=(1 to 31)
+S=(st,nd,rd,urth) 
+
+MONTH HAS FOUR VALUES
+F=(january)
+m=(01)
+M=(jan)
+n=(1)
+
+YEAR HAS 2 VALUES
+Y=(2019)
+y=(19)
+
+WEEK HAS FOUR VALUES
+D=(mon)
+l=(monday)
+N=(1) start from sunday(1) to monday(7)
+w=(2) start from sunday(0) to saturday(6)
+
+*/
+
 echo "Today date is : " . date("d") . "<br>";  //d=(01 to 31)
 echo "Today date is : " . date("j") . "<br>";  //j=(1 to 31)
 echo "Today date is : " . date("jS") . "<br><br>"; //S=(st,nd,rd,urth) 
