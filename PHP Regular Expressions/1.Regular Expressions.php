@@ -4,8 +4,8 @@
 
 $string = "PHP is the web scripting language of choice";
 
-//$exp=preg_match("/PHP/",$string); // match found
-//$exp=preg_match("/php/",$string);  //match not found
+//$exp=preg_match("/PHP/",$string);   //match found
+//$exp=preg_match("/php/",$string);   //match not found
 //$exp=preg_match("/php/i",$string);  //match found case insentive
 
 /*
