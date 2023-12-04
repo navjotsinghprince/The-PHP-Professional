@@ -1,4 +1,24 @@
 <?php
+
+//02:30:27 pm post meridiem date format h:i:s A
+//HOURS HAS 4 VALUES
+// h(01 to 12) print format 01,02,03,04,05
+// H(00 to 23) 
+// g(1 to 12) print format 1,2,3,4,5,6,7
+// G(0 to 23)
+
+//MINUTES has 1 value
+//i(00 to 59)
+
+//SECOND HAS 1 VALUE
+//s(00 to 59)
+
+//MERIDIEM HAS 2 VALUES 
+//A=AM:PM
+//a=am:pm
+
+
+
 echo "Current hour is : " . date("h") . "<br>"; //h(01 to 12) print format 01,02,03,04,05
 echo "Current hour is : " . date("H") . "<br>"; //H=(00 to 23) 
 echo "Current hour is : " . date("g") . "<br>"; //g=(1 to 12) print format 1,2,3,4,5,6,7

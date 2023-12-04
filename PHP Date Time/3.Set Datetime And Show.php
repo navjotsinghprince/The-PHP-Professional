@@ -3,6 +3,9 @@
 //mktime(hours,mintues,second,month,day,year) === we can set past time dates on mktime and show
 echo date("l", mktime(0, 0, 0, 10, 15, 2004)) . "<br>"; //that day on friday
 echo date("l d-m-Y h:i:sa", mktime(0, 0, 0, 12, 22, 2004)) . "<br>"; //show full format
+
+//This shows gmt date(greenwich mean time)
+//It will display the time according to GMT (Greenwich Mean Time) for the specified date in the past.
 echo date("l d-m-Y h:i:sa", gmmktime(0, 0, 0, 12, 22, 2004)) . "<br>"; //show time GMT according
 
 
