@@ -5,10 +5,10 @@ It offers a diverse range of in-depth learning materials, expert insights, and p
 Explore advanced topics, or stay updated with the latest trends with *The PHP Professional*
 
 ## Author
-<a href="https://navjotsinghprince.com" traget="_blank"><img src="https://navjotsinghprince.com/img/signature-black.png" alt="Navjot Singh" height="50"></a>
+<a href="https://github.com/navjotsinghprince" traget="_blank"><img src="img/signature-black.png" alt="Navjot Singh" height="50"></a>
 
 ## Contact
-If you discover any question within The PHP Professional, please send an e-mail to Navjot via [contact@navjotsinghprince.com](mailto:contact@navjotsinghprince.com). Your all questions will be answered.
+If you discover any question within The PHP Professional, please send an e-mail to Navjot via [navjotsinghprince@icloud.com](mailto:navjotsinghprince@icloud.com). Your all questions will be answered.
 
 ## Buy Me A Coffee! :coffee: 
 Feel free to buy me a coffee at [__Buy me a coffee! :coffee:__]( https://ko-fi.com/princeferozepuria), I would be really grateful for anything, be it coffee or just a kind comment towards my work, that helps me a lot.
